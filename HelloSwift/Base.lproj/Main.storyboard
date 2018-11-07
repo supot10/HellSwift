@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Supot Singhassatit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21o-Va-3MG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supot Singhassatit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21o-Va-3MG">
                                 <rect key="frame" x="0.0" y="0.0" width="246" height="37"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <color key="textColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,12 +38,14 @@
                                         <exclude reference="3KY-pd-qtA"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="84" y="264" width="246" height="49"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="3KY-pd-qtA"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="changeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kl3-MH-V1G"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,10 +61,10 @@
                                 <exclude reference="c4O-4g-hBQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="XeC-7F-F1N"/>
-                                <exclude reference="b3v-Pk-DWZ"/>
                                 <exclude reference="ChN-6k-fLt"/>
                                 <exclude reference="m87-Uy-wwt"/>
+                                <exclude reference="XeC-7F-F1N"/>
+                                <exclude reference="b3v-Pk-DWZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -71,14 +73,17 @@
                                 <include reference="c4O-4g-hBQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="XeC-7F-F1N"/>
-                                <include reference="b3v-Pk-DWZ"/>
                                 <include reference="ChN-6k-fLt"/>
                                 <include reference="m87-Uy-wwt"/>
+                                <include reference="XeC-7F-F1N"/>
+                                <include reference="b3v-Pk-DWZ"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="21o-Va-3MG" id="bKZ-Mj-TiV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
