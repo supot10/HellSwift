@@ -17,41 +17,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Q9-c8-kXv">
-                                <rect key="frame" x="50" y="233" width="246" height="37"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5h-X3-A01">
-                                        <rect key="frame" x="0.0" y="0.0" width="246" height="37"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Supot Singhassatit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21o-Va-3MG">
-                                                <rect key="frame" x="0.0" y="0.0" width="246" height="37"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                                <color key="textColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <size key="shadowOffset" width="1" height="4"/>
-                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="246" height="37"/>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                        <variation key="widthClass=compact" axis="vertical" ambiguous="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="246" height="37"/>
-                                        </variation>
-                                    </stackView>
-                                </subviews>
-                                <variation key="widthClass=compact" axis="vertical" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="253" width="246" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Supot Singhassatit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21o-Va-3MG">
+                                <rect key="frame" x="0.0" y="0.0" width="246" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="4"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4O-4g-hBQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="3KY-pd-qtA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Change"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3KY-pd-qtA"/>
+                                    </mask>
                                 </variation>
-                            </stackView>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="84" y="264" width="246" height="49"/>
+                                    <mask key="constraints">
+                                        <include reference="3KY-pd-qtA"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c4O-4g-hBQ" firstAttribute="top" secondItem="21o-Va-3MG" secondAttribute="bottom" constant="19" id="ChN-6k-fLt"/>
+                            <constraint firstItem="21o-Va-3MG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="188" id="XeC-7F-F1N"/>
+                            <constraint firstItem="21o-Va-3MG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b3v-Pk-DWZ"/>
+                            <constraint firstItem="c4O-4g-hBQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m87-Uy-wwt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="21o-Va-3MG"/>
+                                <exclude reference="c4O-4g-hBQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XeC-7F-F1N"/>
+                                <exclude reference="b3v-Pk-DWZ"/>
+                                <exclude reference="ChN-6k-fLt"/>
+                                <exclude reference="m87-Uy-wwt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="21o-Va-3MG"/>
+                                <include reference="c4O-4g-hBQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XeC-7F-F1N"/>
+                                <include reference="b3v-Pk-DWZ"/>
+                                <include reference="ChN-6k-fLt"/>
+                                <include reference="m87-Uy-wwt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303.75" y="286.5"/>
+            <point key="canvasLocation" x="303" y="286"/>
         </scene>
     </scenes>
 </document>
